@@ -1,0 +1,25 @@
+/*
+Hidden content, no space
+*/
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
+Text Alignment: center, left, right
+*/
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}

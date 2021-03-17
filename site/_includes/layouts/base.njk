@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title or site.title }} | {{ subdomain or site.subdomain }} | {{ domain or site.domain }}</title>
+        <meta name="description" content="{{ description or site.description }}">
+        <link rel="canonical" href={ page.url } />
+        <meta name="robots" content="index, follow" />
+        {% seo "" %}
+        <link rel="stylesheet" href="{{ '/static/css/main.css' | url }}">
+    </head>
+    <body> 
+        {% include "components/header.njk" %}
+        <main class="">
+            {{ content | safe }}
+        </main>
+        <script src="{{ '/static/js/main.js' | url }}"></script>
+    </body>
+</html>

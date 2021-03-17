@@ -1,0 +1,11 @@
+.wrapper--spotlight {
+  padding: calc(var(--spacer) * 4) 0;
+}
+
+.wrapper--home-art-list {
+  padding: calc(var(--spacer) * 4) 0;
+}
+
+.wrapper--home-ateliers-list {
+  padding: calc(var(--spacer) * 4) 0;
+}
