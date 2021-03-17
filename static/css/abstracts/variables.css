@@ -1,0 +1,13 @@
+:root {
+  --color-white: rgba(252, 252, 252, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-grey-500: #E6E6E6;
+  --color-grey-300: #C6C6C6;
+  --color-grey-600: #787878;
+  --color-blue:  #003cff;
+
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-body: var(--font-family-roboto);
+  --font-family-headings: var(--font-family-lato);
+}

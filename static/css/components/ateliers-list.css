@@ -1,0 +1,31 @@
+.ateliers-list {
+  align-items: center;
+}
+
+.ateliers-list__header {
+  margin-bottom: calc(var(--spacer)*2);
+}
+
+.ateliers-list__heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: calc(var(--spacer) / 2);
+}
+
+.ateliers-list__link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-blue);
+  text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+  transition: all 286ms linear 0s;
+}
+
+.ateliers-list__link:hover {
+  border-bottom-color: var(--color-blue);
+}
+
+.ateliers-list > div {
+  margin-bottom: calc(var(--gutter) * 2);
+}
