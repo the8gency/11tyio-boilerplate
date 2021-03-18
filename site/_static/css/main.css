@@ -1,17 +1,3 @@
-@import "abstracts/fonts.css";
-@import "abstracts/variables.css";
-@import "abstracts/utilities.css";
-@import "base/common.css";
-@import "base/typography.css";
-@import "layout/footer.css";
-@import "layout/grid.css";
-@import "layout/header.css";
-@import "layout/social-media.css";
-@import "components/art-list.css";
-@import "components/ateliers-list.css";
-@import "components/card.css";
-@import "components/navigation.css";
-@import "components/spotlight.css";
-@import "components/to-top.css";
-@import "pages/biography.css";
-@import "pages/home.css";
+body {
+  background: #fff;
+}
