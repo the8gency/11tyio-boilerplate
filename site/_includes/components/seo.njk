@@ -1,6 +1,6 @@
 <title>{{ title or site.title }} | {{ subdomain or site.subdomain }} | {{ domain or site.domain }}</title>
 <meta name="description" content="{{ description or site.description }}">
-<link rel="canonical" href="{{ page.url }}" />
+<link rel="canonical" href="{{ page.url | url }}" />
 <meta property="og:title" content="{{ title or site.title }} | {{ subdomain or site.subdomain }} | {{ domain or site.domain }}"/>
 <meta property="og:url" content="{{ page.url | url }}" />
 <meta property="og:description" content="{{ description or site.description }}" />
