@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title or site.title }} | {{ subdomain or site.subdomain }} | {{ domain or site.domain }}</title>
-        <meta name="description" content="{{ description or site.description }}">
-        <link rel="canonical" href={ page.url } />
         <meta name="robots" content="index, follow" />
-        {% seo "" %}
+        {% include "components/seo.njk" %}
+        {% include "components/icons.njk" %} 
+        <link type="text/plain" rel="author" href="{{ '/humans.txt' | url }}" />       
         <link rel="stylesheet" href="{{ '/static/css/main.css' | url }}">
     </head>
     <body> 
         {% include "components/header.njk" %}
-        <main class="">
+        <main class="main">
             {{ content | safe }}
         </main>
+        {% include "components/footer.njk" %}
         <script src="{{ '/static/js/main.js' | url }}"></script>
     </body>
 </html>

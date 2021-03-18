@@ -1,1 +1,8 @@
-{% include "components/navigation.njk" %}
+<header class="header">
+    <h1 class="logo">
+        <a href="{{ '/' | url }}" title="back to the homepage of the {{ seo.title }}">
+            the8gency
+        </a>
+    </h1>
+    {% include "components/navigation.njk" %}
+</header>

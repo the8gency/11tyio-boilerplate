@@ -1,11 +1,12 @@
 {
-    "title": "the8gency",
-    "subdomain": "Associate Degree in Computer Programming",
-    "domain": "Artevelde University of Applied Sciences",
+    "title": "Home",
+    "subdomain": "the8gency",
+    "domain": "Associate Degree in Computer Programming",
     "url": "https://myurl.com/",
     "description": "Get great at designing amazing websites and mobile applications with high-performance code and neat graphics. In the Associate Degree in Computer Programming you will learn all the tricks of the digital trade.",
     "author": {
         "name": "Philippe De Pauw - Waterschoot",
         "email": "philippe.depauw@arteveldehs.be"
-    }
+    },
+    "image": "/static/images/logo.jpg"
 }

@@ -1,17 +1,16 @@
 const fs = require('fs');
 const pluginNavigation = require('@11ty/eleventy-navigation');
-const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(pluginSEO, require("./site/_data/seo.json"));
 
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addPassthroughCopy({ 'site/_static/css': 'static/css' });
   eleventyConfig.addPassthroughCopy({ 'site/_static/images': 'static/images' });
   eleventyConfig.addPassthroughCopy({ 'site/_static/js': 'static/js' });
+  eleventyConfig.addPassthroughCopy({ 'site/humans.txt': 'humans.txt' });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

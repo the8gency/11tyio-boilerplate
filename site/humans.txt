@@ -1,0 +1,27 @@
+/* Introduction */
+
+████████╗██╗  ██╗███████╗ █████╗  ██████╗ ███████╗███╗   ██╗ ██████╗██╗   ██╗
+╚══██╔══╝██║  ██║██╔════╝██╔══██╗██╔════╝ ██╔════╝████╗  ██║██╔════╝╚██╗ ██╔╝
+   ██║   ███████║█████╗  ╚█████╔╝██║  ███╗█████╗  ██╔██╗ ██║██║      ╚████╔╝ 
+   ██║   ██╔══██║██╔══╝  ██╔══██╗██║   ██║██╔══╝  ██║╚██╗██║██║       ╚██╔╝  
+   ██║   ██║  ██║███████╗╚█████╔╝╚██████╔╝███████╗██║ ╚████║╚██████╗   ██║   
+   ╚═╝   ╚═╝  ╚═╝╚══════╝ ╚════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝   ╚═╝   
+                                                                             
+CONGRATULATIONS, you found our humans.txt file!
+
+/* TEAM */
+Teamleader: Philippe De Pauw - Waterschoot.	
+Site: http://drdynscript.eu	
+Contact: philippe.depauw [at] arteveldehs.be
+Twitter: drdynscript.	
+Locatie: Ghent, Belgium.	
+
+/* THANKS */
+Developer: Evan Cole
+Contact: evan@hackyourfuture.be
+
+/* SITE */
+Last updated: 2021/03/26 
+Standards: HTML5, CSS3, ESNext	
+Components: Bootstrap
+Software: Microsoft Visual Studio Code, Adobe XD
