@@ -1,0 +1,54 @@
+// Required
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+// Variables
+
+$font-family-sans-serif:      $font-family-montserrat;
+$font-family-monospace:       $font-family-ibm-plex-mono;
+$font-family-base:            $font-family-sans-serif;
+$headings-font-family:        $font-family-montserrat;
+$headings-font-weight:        600;
+$headings-line-height:        1.4;
+
+// $font-family-source-sans-pro
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:          12;
+$grid-gutter-width:     ($spacing*2px);
+$grid-row-columns:      6;
+
+// Optional
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/grid";
