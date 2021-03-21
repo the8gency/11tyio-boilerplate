@@ -1601,3 +1601,110 @@ mark,
     margin-left: 91.6666666667%;
   }
 }
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+}
+.logo a {
+  color: #212529;
+}
+
+.nav {
+  --nav-spacing: 18px;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__list-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+.nav__list-item > a {
+  position: relative;
+  display: block;
+  color: #212529;
+  padding: calc(var(--nav-spacing)/2) var(--nav-spacing);
+  text-decoration: none;
+}
+.nav__list-item > a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0.5em;
+  left: var(--nav-spacing);
+  height: 0.5em;
+  width: calc(100% - var(--nav-spacing) * 2);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 286ms ease-in-out 0s;
+}
+.nav__list-item > a:hover::before {
+  background: #adb5bd;
+  border-bottom-color: #212529;
+}
+.nav__list-item--active > a::before {
+  background: #b8a3df;
+  border-bottom-color: #212529;
+}
+
+.footer-nav {
+  --nav-spacing: 18px;
+}
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-nav__list-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer-nav__list-item > a {
+  position: relative;
+  display: block;
+  color: #f8f9fa;
+  padding: calc(var(--nav-spacing)/4) var(--nav-spacing);
+  text-decoration: none;
+}
+.footer-nav__list-item > a:hover {
+  color: rgba(248, 249, 250, 0.48);
+}
+.footer-nav__list-item--active > a {
+  color: rgba(248, 249, 250, 0.48);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.header {
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: #dee2e6 0px 2px 4px 0px;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  border-top: 1px solid #e9ecef;
+  background: #543195;
+  color: #f8f9fa;
+  padding: 72px 0;
+}

@@ -1,11 +1,11 @@
-<nav class="col nav">
+<nav class="footer-nav">
 {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
     listElement: "ul",
     listItemElement: "li",
-    listClass: "nav__list",
-    listItemClass: "nav__list-item",
+    listClass: "footer-nav__list",
+    listItemClass: "footer-nav__list-item",
     listItemHasChildrenClass: "has-children",
-    activeListItemClass: "nav__list-item--active",
+    activeListItemClass: "footer-nav__list-item--active",
     activeKey: eleventyNavigation.key,
     showExcerpt: false
 }) | safe }}

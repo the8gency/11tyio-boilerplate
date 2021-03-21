@@ -1,0 +1,74 @@
+.nav {
+    --nav-spacing: #{$spacing*1px};
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            font-family: $font-family-montserrat;
+            font-size: 28px;
+            font-weight: 500;
+
+            > a {
+                position: relative;
+                display: block;
+                color: $gray-900;
+               
+                padding: calc(var(--nav-spacing)/2) var(--nav-spacing);
+
+                text-decoration: none;                
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    bottom: 0.5em;
+                    left: var(--nav-spacing);
+                    height: 0.5em;
+                    width: calc(100% - var(--nav-spacing) * 2);
+                    background: transparent;
+                    border-bottom: 1px solid transparent;
+
+                    transition: all 286ms ease-in-out 0s;
+                }
+
+                &:hover::before {
+                    background: $gray-500;
+                    border-bottom-color: $gray-900;
+                }
+            }
+
+            &--active {
+                > a {
+                    &::before {
+                        background: lighten($ahs-purple, 20%);
+                        border-bottom-color: $gray-900;
+                    }
+                }
+            }
+
+            // &:last-of-type {
+            //     background-position: 50%;
+            //     background-image: linear-gradient(90deg,#5129f5 0,#5129f5 33%,#e14647 66%,#e14647);
+            //     background-size: 300% 100%;
+            //     padding: 2px;
+
+            //     > a {
+            //         background: $gray-100;
+
+            //         &:hover {
+            //             background: transparent;
+            //         }
+            //     }
+            // }
+        }
+    }
+}

@@ -1,5 +1,16 @@
----
-layout: layouts/base.njk
-templateClass: 404
----
-{{ content | safe }}
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="no-index, no-follow" />
+        {% include "components/icons.njk" %} 
+        <link rel="stylesheet" href="{{ '/static/css/main.css' | url }}">
+    </head>
+    <body> 
+        <main class="main">
+            {{ content | safe }}
+        </main>
+        <script src="{{ '/static/js/main.js' | url }}"></script>
+    </body>
+</html>
